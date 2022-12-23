@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Contato Morada dos Ipês</title>
+    <link rel="stylesheet" href="./styles/style01.css">
+
+</head>
+
+<body>
+
+    <div>
+        <header>
+
+            <div>
+
+                <div id="dadosNavBar">
+                    <a href="./Pagina_Inicial.html">Voltar a Página Inicial</a>
+                    <a href="./Localização.html">Conheça Nossa Instalação</a>
+                    <a href="./Nossas_Atividades.html">Conheça Nossos Serviços</a>
+                    <a href="./Formulario.html#">Entre em Contato Conosco</a>
+                </div>
+
+            </div>
+
+        </header>
+    </div>
+
+    <fieldset>
+        <h1>Morada dos Ipês</h1>
+        <div id="dados">
+            <img id="imgCab" class="displayed" src="./Imagens/Logo.jpg" alt="logo">
+        </div>
+    </fieldset>
+
+    <form name="Contato" id="form" form action="Agradecimento.html" method="get">
+        <h1 class="TituloIni">Inscrição:</h1>
+
+        <fieldset class="fieldForm">
+            <div>
+                <h3>Informações do Responsável: </h3>
+                <div id="dados">
+                    <label for="Nome Completo">Nome Completo:</label>
+                    <input type="text" id="nomeCompletoR" name="nomeCompletoR">
+                    <span role="alert" id="nameError" aria-hidden="true">
+                        Digite o nome
+                    </span>
+                </div>
+                <div id="dados">
+                    <label for="CPF">CPF:</label>
+                    <input type="text" id="cpfR" name="cpfR">
+                    <span role="alert" id="cpfError" aria-hidden="true">
+                        Digite o CPF
+                    </span>
+                </div>
+                <div id="dados">
+                    <label for="Data de nascimento">Data de nascimento:</label>
+                    <input type="date" id="dataNascR" name="dataNascR">
+                    <span role="alert" id="dataError" aria-hidden="true">
+                        Digite a data de nascimento
+                    </span>
+                </div>
+                <div id="dados">
+                    <label for="Telefone">Telefone:</label>
+                    <input type="tel" id="teleR" name="teleR">
+                    <span role="alert" id="telError" aria-hidden="true">
+                        Digite o telefone
+                    </span>
+                </div>
+                <div id="dados">
+                    <label for="Email">Email:</label>
+                    <input type="email" id="emailR" name="emailR">
+                    <span role="alert" id="emailError" aria-hidden="true">
+                        Digite o email
+                    </span>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldForm">
+            <div>
+                <h3>Informação do Hóspede: </h3>
+                <div id="dados">
+                    <label for="NomeCompleto">Nome Completo:</label>
+                    <input type="text" id="nomeCompletoH" name="Nome nomeCompletoH">
+                    <span role="alert" id="nameErrorH" aria-hidden="true">
+                        Digite o nome
+                    </span>
+                </div>
+                <div id="dados">
+                    <label for="CPFH">CPF:</label>
+                    <input type="text" id="cpfH" name="cpfH">
+                    <span role="alert" id="cpfErrorH" aria-hidden="true">
+                        Digite o cpf
+                    </span>
+                </div>
+                <div id="dados">
+                    <label for="Data de nascimento H">Data de nascimento:</label>
+                    <input type="date" id="dataNascH" name="dataNascH">
+                    <span role="alert" id="dataErrorH" aria-hidden="true">
+                        Digite a data de nascimento
+                    </span>
+                </div>
+                <div id="dados">
+                    <label for="Telefone H">Telefone:</label>
+                    <input type="tel" id="teleH" name="teleH">
+                    <span role="alert" id="telErrorH" aria-hidden="true">
+                        Digite o telefone
+                    </span>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldForm">
+            <div>
+
+                <h3>Acompanhamentos: </h3>
+                <div id="dados">
+                    <label for="Médico">Médico</label>
+                    <input type="checkbox" id="medico" name="medico">
+                </div>
+                <div id="dados">
+                    <label for="Psicológico">Psicológico</label>
+                    <input type="checkbox" id="psicologo" name="psicologo">
+                </div>
+                <div id="dados">
+                    <label for="Alimentar">Alimentar</label>
+                    <input type="checkbox" id="alimentar" name="alimentar">
+                </div>
+                <div id="dados">
+                    <label for="Outros">Outros (Informe abaixo)</label>
+                    <input type="checkbox" id="outros" name="outros">
+                </div>
+                <div id="dados">
+                    <textarea name="txtComentario" cols="80" rows="5" maxlength="2000"
+                        placeholder="No máx 2000 caracteres"></textarea>
+                </div>
+            </div>
+
+        </fieldset>
+
+        <fieldset class="fieldForm">
+            <div>
+                <h3>Faz uso de Medicamentos?</h3>
+                <div id="dados">
+                    <label for="Não">Não:</label>
+                    <input type="radio" id="medicamentoN" name="alimentar">
+                    <span role="alert" id="medicamentos" aria-hidden="true">
+                        Selecione uma opção
+                    </span>
+                </div>
+                <div id="dados">
+                    <label for="Sim">Sim:</label>
+                    <input type="radio" id="medicamentoS" name="alimentar">
+                    <span role="alert" id="medicamentos" aria-hidden="true">
+                        Selecione uma opção
+                    </span>
+                </div>
+                <div id="dados">
+                    <h5>Se sim, quais?</h5>
+                    <textarea name="txtComentario" cols="80" rows="5" maxlength="2000"
+                        placeholder="No máx 2000 caracteres"></textarea>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <input type="button" id="submit" value="Verificar">
+            <input type="button" name="Limpar" id="limpar" value="Limpar">
+            <input type="button" name="editar" id="editar" value="Editar">
+            <input type="submit" name="submit" value="Enviar">
+        </fieldset>
+    </form>
+    <div class="dadosVerificados">
+        <h3 id="labelDadosVerificados">Nome Responsável:</h3>
+        <p class="pRevisao" id="pNomeR"></p>
+        <h3 id="labelDadosVerificados">CPF Responsável:</h3>
+        <p class="pRevisao" id="pCpfR"></p>
+        <h3 id="labelDadosVerificados">Data Nascimento Responsável:</h3>
+        <p class="pRevisao" id="pDataNascR"></p>
+        <h3 id="labelDadosVerificados">Telefone Responsável:</h3>
+        <p class="pRevisao" id="pTeleR"></p>
+        <h3 id="labelDadosVerificados">Email Responsável:</h3>
+        <p class="pRevisao" id="pEmailR"></p>
+        <h3 id="labelDadosVerificados">Nome Hospede:</h3>
+        <p class="pRevisao" id="pNomeH"></p>
+        <h3 id="labelDadosVerificados">CPF Hospede:</h3>
+        <p class="pRevisao" id="pCpfH"></p>
+        <h3 id="labelDadosVerificados">Data Nascimento Hospede:</h3>
+        <p class="pRevisao" id="pDataNascH"></p>
+        <h3 id="labelDadosVerificados">Telefone Hospede:</h3>
+        <p class="pRevisao" id="pTeleH"></p>
+    </div>
+
+    <footer id="footer" class="footer">
+        <div class="copyright">
+            &copy; Copyright <strong><span>UFU</span></strong>. All Rights Reserved
+        </div>
+        <div class="creditos">
+            Designed by <a href="https://www.instagram.com/_ianseki/">Ian de Barros Seki</a>
+        </div>
+
+        <a href="#"><img id="imgRod" src="./Imagens/Seta.png" alt="Seta"></a>
+
+    </footer>
+    <script src="./js/jsForm.js"></script>
+</body>
+
+</html>
